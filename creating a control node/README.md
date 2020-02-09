@@ -25,3 +25,4 @@
       ```sh
        ssh-keygen 
       ```
+   - Enable password based login (not necessary) 
