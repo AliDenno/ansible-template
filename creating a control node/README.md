@@ -25,4 +25,8 @@
       ```sh
        ssh-keygen 
       ```
-   - Enable password based login (not necessary) 
+   - Enable password based login (not necessary) (This shouldnt happen on a control node)
+   - a key should be copied to the managed node 
+      ```sh
+       ssh-copy-id username@remote_host
+      ```

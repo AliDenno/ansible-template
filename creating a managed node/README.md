@@ -27,7 +27,6 @@
      adduser ansadmin
      passwd ansadmin
    ```
-   
 4. Add user to sudoers file
    ```sh
       visudo
@@ -43,4 +42,23 @@
    - set the following:
    ```sh
       PasswordAuthentication yes
+   ```
+   - restart the service:
+   ```sh
+      reload sshd.service
+      or
+      service sshd reload
+   ```
+6. Creating the communication between the control node and managed nodes:
+   - grab the managed node ip:
+   ```sh
+      ip addr
+   ```
+   then add it to the 'hosts' file of the control node (using the ansible user), usually:
+   ```sh
+      /opt/ansible/hosts 
+   ```
+   - copy the public key from the control node to the managed nodes to obtain ansible access (that is why PasswordAuthentication is set to yes temporarily), on control node do the following:
+   ```sh
+      ssh-copy-id control-node-ip
    ```
