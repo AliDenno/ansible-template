@@ -44,3 +44,7 @@
    ```sh
       PasswordAuthentication yes
    ```
+   - restart the service:
+   ```sh
+      reload sshd.service
+   ```
