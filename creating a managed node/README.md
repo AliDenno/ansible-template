@@ -46,6 +46,8 @@
    - restart the service:
    ```sh
       reload sshd.service
+      or
+      service sshd reload
    ```
 6. Creating the communication between the control node and managed nodes:
    - grab the managed node ip:
