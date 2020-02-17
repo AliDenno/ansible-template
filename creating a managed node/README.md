@@ -56,7 +56,7 @@
    ```sh
       /opt/ansible/hosts 
    ```
-   - copy the public key from the control node to the managed nodes to obtain access, on control node do the following:
+   - copy the public key from the control node to the managed nodes to obtain ansible access (that is why PasswordAuthentication is set to yes temporarily), on control node do the following:
    ```sh
       ssh-copy-id control-node-ip
    ```
