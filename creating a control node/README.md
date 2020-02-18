@@ -58,4 +58,10 @@
    - ansible.cfg
 		* Add content from: https://github.com/ansible/ansible/blob/devel/examples/ansible.cfg
 		* Google Ansible config file
+      ```sh
+        touch hosts
+      ```
+   - Save the IPs of managed nodes in the hosts file above
+   	   - run 'ip addr' to get the ip (Use private IP [inet] because it doesn’t change when restarting)
 
+      		
