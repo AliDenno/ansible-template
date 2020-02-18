@@ -1,22 +1,36 @@
 # Control Node Installation
 ### Installation steps:
 
-1. Get a linux machine
-2. Create a new user
+1. Get a linux machine (VPS etc.)
+	* Setup EC2 Instance (Example)
+	   - Ec2 >> Amazon Linux 2 AMI (HVM) >> pick type, configure, storage 
+	   - Add tag: Name:Ansible_Control_Node
+	   - Security group: Ansible-SG
+	   - Ports >> ssh:22, http:80, customTcp:8080  
+	   - Get the pem
+2. Setup hostname 
+   ```sh
+    sudo su -
+    hostname ansible-control-node 
+    vi /etc/hostname
+    (Write the name ansible-control-node)
+   ```
+3. Create a new user
    ```sh
     sudo adduser ansadmin
+    you can also,
+    Passwd ansadmin
    ```
-3. Add user to sudoers file 
+4. Add user to sudoers file 
    ```sh
     visudo
    ```
    - under root [or anywhere] 
-   - ansadmin ALL=(ALL) NOPASSWD: ALL 
-   - sudo su - ansadmin 
-   
-   
-   
-4. Generate ssh keys 
+      - ansadmin ALL=(ALL) NOPASSWD: ALL 
+   ```sh
+    sudo su - ansadmin 
+   ```
+5. Generate ssh keys 
    - first you need to have openssh client and server
       ```sh
        sudo apt-get install openssh-client openssh-server
