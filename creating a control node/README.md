@@ -44,3 +44,18 @@
       ```sh
        ssh-copy-id username@remote_host
       ```
+6. Install Ansible
+   - Forexample using yum 
+      ```sh
+       yum install python
+       yum install python-pip
+       pip install ansible
+       ansible --version
+       mkdir /etc/ansible
+       cd /etc/ansible
+       vi ansible.cfg
+      ```
+   - ansible.cfg
+		* Add content from: https://github.com/ansible/ansible/blob/devel/examples/ansible.cfg
+		* Google Ansible config file
+
