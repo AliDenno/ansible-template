@@ -65,3 +65,7 @@
    	   - run 'ip addr' to get the ip (Use private IP [inet] because it doesn’t change when restarting)
 
       		
+validate connection between control and manage by a ssh call :
+ssh host
+then
+ansible all -m ping -i hosts
