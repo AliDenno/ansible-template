@@ -10,7 +10,10 @@
    ```sh
     ansible-playbook -i hosts playBookName.yml -b
    ```
-
+   that is also available for Ansible commands, for example if you are gathering setup information of hosts, you can be specific (where 'ubuntu' is defined as a group in the 'hosts_groups' file: 
+   ```sh
+    ansible ubuntu -i hosts_groups -m setup
+   ```
 * Check if a playbook **is going to work** and check its **syntax**:
    ```sh
     ansible-playbook -i hosts_groups copy_file.yml --check
