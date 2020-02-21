@@ -1,4 +1,6 @@
 * Run a playbook:
+   -  suggested located to store playbooks is: /opt/ansible/
+* Run a playbook:
    ```sh
     ansible-playbook -i hosts playBookName.yml
    ```
