@@ -10,3 +10,8 @@
 
     * Environment variables have a higher precedence than entries in ansible.cfg. If you have environment variables set on your control node, they override the settings in whichever ansible.cfg file Ansible loads. The value of any given environment variable follows normal shell precedence: the last value defined overwrites previous values.
 Command-line options
+
+    * Get different information about your hosts:
+         ```sh
+          ansible all -i hosts1 -m setup
+         ```
