@@ -34,6 +34,10 @@
    ```sh
      ansible-playbook -i hosts_groups install_apache_httpd_index_tags.yml --tags "start_apache"
    ```
+* If you want your playbook to continue, even if one of the tasks threw an error. You can add the following to your task:
+   ```sh
+     ignore_errors: yes
+   ```
 * Manages packages (depends on distro):
    -  https://docs.ansible.com/ansible/latest/modules/apt_module.html
    -  https://docs.ansible.com/ansible/latest/modules/yum_module.html
