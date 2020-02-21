@@ -1,4 +1,4 @@
-* Run a playbook:
+* Location of playbooks:
    -  suggested located to store playbooks is: /opt/ansible/
 * Run a playbook:
    ```sh
