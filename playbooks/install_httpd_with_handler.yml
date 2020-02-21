@@ -1,0 +1,16 @@
+---
+- name: this playbook install httpd
+  hosts: rhel
+  become: true
+  tasks:
+  - name: install package
+    yum:
+      name: httpd
+      state: installed
+    notify: start apache
+
+  handlers:
+  - name: start apache
+    service:
+      name: httpd
+      state: started
