@@ -13,3 +13,6 @@
 * Manages packages (depends on distro):
    -  https://docs.ansible.com/ansible/latest/modules/apt_module.html
    -  https://docs.ansible.com/ansible/latest/modules/yum_module.html
+
+* Manage files and file properties
+   -  https://docs.ansible.com/ansible/latest/modules/file_module.html
