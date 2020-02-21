@@ -7,5 +7,5 @@
   tasks:
   - name: clone a repo
     git:
-      repo: https://yankils:{{ password }}@github.com/yankils/vault.git
+      repo: https://ali:{{ password }}@github.com/ali/vault.git
       dest: /opt/ansadmin/test-vault
