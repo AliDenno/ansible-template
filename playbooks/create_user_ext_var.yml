@@ -1,0 +1,10 @@
+---
+- name: this is a simple plazboot to create a user
+  hosts: ubuntu
+  become: true
+  vars_files:
+    - users.yml
+  tasks:
+  - name: creating user "{{ user }}"
+    user:
+      name: "{{ user }}"
