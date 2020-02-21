@@ -20,8 +20,9 @@
     ansible-playbook -i hosts_groups copy_file.yml --syntax-check
    ```
    
-* Use **notify-handlers** when you want to check a condition before performing an action:
+* Use **notify-handlers** or **Conditions** when you want to check a condition before performing an action:
    -  ex. if App is installed then start it, if not then install it
+   - see: install_httpd_with_handler.yml, install_apache_httpd.yml 
 
 * Manages packages (depends on distro):
    -  https://docs.ansible.com/ansible/latest/modules/apt_module.html
