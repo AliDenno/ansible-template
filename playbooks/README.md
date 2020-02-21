@@ -14,6 +14,7 @@
 * Check if a playbook is going to work:
    ```sh
     ansible-playbook -i hosts_groups copy_file.yml --check
+    ansible-playbook -i hosts_groups copy_file.yml --syntax-check
    ```
 
 * Manages packages (depends on distro):
