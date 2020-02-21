@@ -30,7 +30,7 @@
    ```sh
      ansible-playbook -i hosts_groups create_user_var.yml -e "user=emanuel"
    ```
-* If you want to be selective when running a playbook, assing tags to the tasks in your playbook and pass the tag via commandline (only the tasks that correspond to the tag will be executed):
+* If you want to be selective when running a playbook, assign **Tags** to the tasks in your playbook and pass the **tag** via commandline (only the tasks that correspond to the passed **tag** will be executed):
    ```sh
      ansible-playbook -i hosts_groups install_apache_httpd_index_tags.yml --tags "start_apache"
    ```
