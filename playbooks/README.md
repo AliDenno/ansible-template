@@ -10,6 +10,12 @@
    ```sh
     ansible-playbook -i hosts playBookName.yml -b
    ```
+
+* Check if a playbook is going to work:
+   ```sh
+    ansible-playbook -i hosts_groups copy_file.yml --check
+   ```
+
 * Manages packages (depends on distro):
    -  https://docs.ansible.com/ansible/latest/modules/apt_module.html
    -  https://docs.ansible.com/ansible/latest/modules/yum_module.html
