@@ -1,0 +1,11 @@
+---
+- name: ansible playbook to copy a file                
+  hosts: ubuntu
+  become: true
+  tasks:
+  - name: copy a file
+    copy:
+     src: /etc/ansible/file_to_copy.txt
+     dest: /home/ansadmin
+     mode: 0600
+     owner: ali
