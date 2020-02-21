@@ -26,6 +26,10 @@
    -  ex. if App is installed then start it, if not then install it
    - see: install_httpd_with_handler.yml, install_apache_httpd.yml 
 
+* Pass a **Variable** from the command line:
+   ```sh
+     ansible-playbook -i hosts_groups create_user_var.yml -e "user=emanuel"
+   ```
 * Manages packages (depends on distro):
    -  https://docs.ansible.com/ansible/latest/modules/apt_module.html
    -  https://docs.ansible.com/ansible/latest/modules/yum_module.html
