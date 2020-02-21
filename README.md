@@ -15,3 +15,8 @@ Command-line options
       ```sh
        ansible all -i hosts1 -m setup
       ```
+      - Extract more information:
+         ```sh
+          ansible all -i hosts1 -m setup | grep nodename
+          ansible all -i hosts1 -m setup | grep os_family
+         ```
