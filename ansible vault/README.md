@@ -19,7 +19,7 @@
     ansible-playbook -i hosts ansible-vault.yml --ask-vault-pass
    ```
    
-* if you don't want to type a password when you run the playbook, you can create a file with only the password of the vault as a content, the password there will be used to decrypt the vault and grab the variables:
+* if you don't want to type a password when you run the playbook, you can create a file with only the password of the vault as a content, that password will be used to decrypt the vault so that the variables there can be used:
    ```sh
     ansible-playbook -i hosts ansible-vault.yml --vault-password-file pass.yml
    ```
